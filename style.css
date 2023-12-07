@@ -4,13 +4,13 @@ body{
     justify-content: center;        
     align-items: center;
 }
-.container{
-    border: 0.5rem ridge red;
+.container{ 
     padding: 4%;
-    background-color: rgb(235, 225, 225);
 }
 #listSutates{
     background-color: rgb(24, 137, 182);
+    padding: 1%;
+    font-weight: bold;
     border: none;
     color: white;
     border-radius: 5px;
@@ -19,8 +19,9 @@ body{
 p{
     text-align: end;
     font-size: 32px;
-    color: rgb(56, 56, 173);
+    color: rgb(15, 15, 15);
     padding: 2%;
+    font-weight: bold;
     
 }
 

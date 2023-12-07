@@ -2,13 +2,15 @@ const titre = document.querySelector('#titre');
 const p = document.querySelector('p');
 const button = document.querySelector('button');
 const listSutates = document.querySelector('#listSutates');
+const sound = document.querySelector('#sound');
+const container = document.querySelector('.container');
 tabNmbers = [];
 async function loadListSurat() {
 
    requete = await fetch('http://api.alquran.cloud/v1/surah');
    let response = await requete.json();
    let tabList = response.data;
-   console.log(tabList);
+   //console.log(tabList);
    tabList.forEach(surat => {
 
       //console.log(surat.englishName);
@@ -29,11 +31,12 @@ let requete = '';
 let sourate = '';
 listSutates.addEventListener('change', async function loadSurat(e) {
    let numSurate = e.target.value
-   console.log(numSurate);
+   //console.log(numSurate);
    requete = await fetch(`http://api.alquran.cloud/v1/surah/${numSurate}`);
    sourate = await requete.json();
-   console.log(sourate.data);
+   //console.log(sourate.data);
    tabAyahs = sourate.data.ayahs;
-   console.log(tabAyahs);
+   //console.log(tabAyahs);
+    container.setAttribute('style','border: 0.5rem ridge rgb(121, 111, 111); background-color: rgb(235, 225, 225);')
    showContent();
 })
