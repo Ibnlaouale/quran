@@ -1,13 +1,15 @@
-body{
+body {
     display: flex;
     flex-direction: column;
-    justify-content: center;        
+    justify-content: center;
     align-items: center;
 }
-.container{ 
+
+.container {
     padding: 4%;
 }
-#listSutates{
+
+#listSutates {
     background-color: rgb(24, 137, 182);
     padding: 1%;
     font-weight: bold;
@@ -16,27 +18,34 @@ body{
     border-radius: 5px;
     font-weight: bold;
 }
-p{
+
+p {
     text-align: end;
     font-size: 32px;
     color: rgb(15, 15, 15);
     padding: 2%;
     font-weight: bold;
+    font-style: italic;
     
+
 }
 
-#titre{
+#titre {
     text-align: end;
     color: red;
     font-size: 32px;
 }
 
-span{
-    height: 10px;
-    height: 10px;
-    border-radius: 50%;
-    font-size: xx-small;
-    padding: 0.5%;
-    background-color: rgb(29, 163, 29);
-    color: white;
+
+.num_verset{
+    margin-right: 5px;
+    display: inline-block;
+    color: blue;
+    background-image: url('accolade_gauche.webp'), url('accolade_droite.webp');
+    background-position: center left, center right;
+    background-size: 8px;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    padding: 0px 12px 0px 12px;
+    font-weight: bold;
 }

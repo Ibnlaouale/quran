@@ -22,7 +22,7 @@ loadListSurat()
 function showContent() {
    p.innerHTML = '';
    tabAyahs.forEach(ayah => {
-      p.innerHTML += `${ayah.text}<span>${ayah.numberInSurah}</span><br>`;
+      p.innerHTML += `<span class="num_verset">${ayah.numberInSurah}</span>${ayah.text}<br>`;
       titre.innerHTML = `(${sourate.data.numberOfAyahs} Ayahs) ${sourate.data.name}`;
    })
 }
