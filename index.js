@@ -7,7 +7,7 @@ const container = document.querySelector('.container');
 tabNmbers = [];
 async function loadListSurat() {
 
-   requete = await fetch('http://api.alquran.cloud/v1/surah');
+   requete = await fetch('https://api.alquran.cloud/v1/surah');
    let response = await requete.json();
    let tabList = response.data;
    //console.log(tabList);
@@ -32,7 +32,7 @@ let sourate = '';
 listSutates.addEventListener('change', async function loadSurat(e) {
    let numSurate = e.target.value
    //console.log(numSurate);
-   requete = await fetch(`http://api.alquran.cloud/v1/surah/${numSurate}`);
+   requete = await fetch(`https://api.alquran.cloud/v1/surah/${numSurate}`);
    sourate = await requete.json();
    //console.log(sourate.data);
    tabAyahs = sourate.data.ayahs;
