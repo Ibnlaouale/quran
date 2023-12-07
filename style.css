@@ -4,12 +4,30 @@ body{
     justify-content: center;        
     align-items: center;
 }
-
+.container{
+    border: 0.5rem ridge red;
+    padding: 4%;
+    background-color: rgb(235, 225, 225);
+}
+#listSutates{
+    background-color: rgb(24, 137, 182);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
 p{
     text-align: end;
     font-size: 32px;
-    color: rgb(28, 28, 128);
+    color: rgb(56, 56, 173);
+    padding: 2%;
     
+}
+
+#titre{
+    text-align: end;
+    color: red;
+    font-size: 32px;
 }
 
 span{
@@ -17,7 +35,7 @@ span{
     height: 10px;
     border-radius: 50%;
     font-size: xx-small;
-    padding: 1%;
-    background-color: rgb(17, 138, 17);
+    padding: 0.5%;
+    background-color: rgb(29, 163, 29);
     color: white;
 }
